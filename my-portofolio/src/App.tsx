@@ -14,7 +14,7 @@ function App() {
 
         WORK
 
-        CONTACT github,linkedn,email,X + About yourself ? maybe diffrent section.
+        CONTACT github,linkedn,email,X[dont forget to post your progress here and commit daily to github] + About yourself ? maybe diffrent section.
 
         VISION, i will become a software developer possibly software enginer, interests - physics,astronomy,sound,lifestyle,biohacking,hacking etc.
 
