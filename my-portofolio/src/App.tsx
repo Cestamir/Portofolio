@@ -1,12 +1,13 @@
-
 import './App.css'
+import Navbar from './Navbar'
 
 function App() {
 
   return (
     <>
-      <div>
+      <main>
         <h1>Expand your team</h1>
+        <Navbar/>
         {/* NAVBAR, (work, contact, vision, experience), focus, hide when scrolling down appears when scrolling up, oval rectangle shape with glass border
         
 
@@ -25,7 +26,7 @@ function App() {
 
         */}
 
-      </div>
+      </main>
     </>
   )
 }

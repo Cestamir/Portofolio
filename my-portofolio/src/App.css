@@ -1,0 +1,29 @@
+
+
+nav {
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Glass border */
+    margin: 20px 20px;
+    background-color: whitesmoke;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+li:hover {
+    transform: scale(1.1,1.05);
+    transition-duration: 0.75s;
+    text-shadow: 1px 1px 0 black;
+    font-size: large;
+    font-weight: 900;
+}
