@@ -1,5 +1,11 @@
 import './App.css'
+import ContactPage from './ContactPage'
+import ExperincePage from './ExperincePage'
+import HomePage from './HomePage'
 import Navbar from './Navbar'
+import VisionPage from './VisionPage'
+import WorkPage from './WorkPage'
+
 
 function App() {
 
@@ -8,6 +14,11 @@ function App() {
       <main>
         <h1>Expand your team</h1>
         <Navbar/>
+        <HomePage/>
+        <WorkPage/>
+        <ContactPage/>
+        <VisionPage/>
+        <ExperincePage/>
         {/* NAVBAR, (work, contact, vision, experience), focus, hide when scrolling down appears when scrolling up, oval rectangle shape with glass border
         
 
