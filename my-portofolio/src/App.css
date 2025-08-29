@@ -5,6 +5,14 @@ section {
     width: 100%;
 }
 
+/* stripes */
+
+.stripes {
+    height: 30px;
+    background-color: white;
+    width: 100%;
+}
+
 
 /* navigation bar */
 nav {
