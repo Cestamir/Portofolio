@@ -1,10 +1,12 @@
+import Headline from "./components/Headline"
+
 
 
 const WorkPage = () => {
   return (
-    <section id='work'>
-        <h1>My work</h1>
-        <p>I have no work yet.</p>
+    <section className="page" id='work'>
+      <Headline text="My work" size={64}/>
+      <p>In construction. </p>
     </section>
   )
 }

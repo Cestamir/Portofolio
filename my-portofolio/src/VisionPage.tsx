@@ -1,9 +1,21 @@
+import Headline from "./components/Headline"
 
 
 const VisionPage = () => {
   return (
-    <section id="vision">
-        <h1>My vision</h1>
+    <section className="page" id="vision">
+        <Headline text="My vision" size={64}/>
+        <div id="vision-grid" className="grid-page-layout">
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+        </div>
         <p>Over past 12 months i have been working on my skills in web development to improve my overall programing knowledge. Since then i have been interested into all technical things and i want to join them with my current wisdom in other fields. To this day ia have mastered body training and sports to maximalize my performance and health to be more effective in functioning and learning through my everyday life. I have studied biology, chemistry, physics, philosopy, mathematics, pschychology, astronomy, teology, managment and meditation to became better by any means. Now i want to pursue my projects including: biohacking-app, flat-garden-box, food-recipe-bible, space-levelup</p>
         <div>
             <h2>BIOHACK</h2>

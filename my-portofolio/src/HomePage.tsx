@@ -1,10 +1,10 @@
+import Headline from "./components/Headline"
 
 
 const HomePage = () => {
   return (
-    <section id='home'>
-        <h1>My name is<br></br>Čestmír Pavlásek</h1>
-        <p>Typescript developer</p>
+    <section className="page" id='home'>
+        <Headline text={'Cestmir Pavlasek'} size={64}/>
     </section>
   )
 }

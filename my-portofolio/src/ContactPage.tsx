@@ -2,20 +2,24 @@
 
 const ContactPage = () => {
   return (
-    <section id="contact">
-        <div id="my-github">
-            <h2>Check out my github</h2>
-            <a href="https://github.com/Cestamir">GITHUB</a>
-        </div>
-        <div id="my-linkedln">
-            <h2>Linkedln</h2>
-        </div>
-        <div id="my-x">
-            <h2>X</h2>
-        </div>
-        <div id="my-email">
-            <h2>Email me here</h2>
-            <button>Send me a message!</button>
+    <section className="page" id="contact">
+        <div id="contact-grid" className="grid-page-layout">
+            <div className="grid-item">
+                <h1>GITHUB</h1>
+                <button>Here</button>
+            </div>
+            <div className="grid-item">
+                <h1>GITHUB</h1>
+                <button>Here</button>
+            </div>
+            <div className="grid-item">
+                <h1>GITHUB</h1>
+                <button>Here</button>
+            </div>
+            <div className="grid-item">
+                <h1>GITHUB</h1>
+                <button>Here</button>
+            </div>
         </div>
     </section>
   )
