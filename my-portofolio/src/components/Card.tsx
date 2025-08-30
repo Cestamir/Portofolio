@@ -1,9 +1,18 @@
-import React from 'react'
 
-const Card = ({}) => {
+interface CardProps {
+  photoURL: string,
+  headline: string,
+  text: string,
+  status: string  
+}
+
+const Card = ({photoURL, headline, text, status} : CardProps) => {
   return (
-    <div id='card'>
-        {/* simple card component need to change overall layout for better composition */}
+    <div className='card'>
+        <h1 className='full-width'>{headline}</h1>
+        <p className='big-item'>{text}</p>
+        <div style={{backgroundImage: `url(${photoURL})`}} className='small-top'></div>
+        <p className='small-bottom'>{status}</p>
     </div>
   )
 }

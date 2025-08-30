@@ -1,3 +1,4 @@
+import Card from "./components/Card"
 import Headline from "./components/Headline"
 
 
@@ -6,7 +7,7 @@ const VisionPage = () => {
     <section className="page" id="vision">
         <Headline text="My vision" size={64}/>
         <div id="vision-grid" className="grid-page-layout">
-            <div>1</div>
+            <Card headline="BIOHACK" text="simple but complex guide to enhance the performance of your body and mind with my personal experince as a bonus." status="IN PROGRESS" photoURL="/tsuyoshi-kozu-pJ_yqFKXHds-unsplash.jpg"/>
             <div>1</div>
             <div>1</div>
             <div>1</div>

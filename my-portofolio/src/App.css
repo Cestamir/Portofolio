@@ -49,3 +49,42 @@
     cursor: pointer;
     transform: scale(1.01);
 }
+
+/* grid for card component
+
+*/
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.big-item {
+  grid-column: 1;
+  grid-row: 2 / 4; 
+}
+
+.small-top {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.small-bottom {
+  grid-column: 2;
+  grid-row: 3;
+}

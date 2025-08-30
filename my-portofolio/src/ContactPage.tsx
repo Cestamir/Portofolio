@@ -9,11 +9,11 @@ const ContactPage = () => {
                 <button>Here</button>
             </div>
             <div className="grid-item">
-                <h1>GITHUB</h1>
+                <h1>EMAIL</h1>
                 <button>Here</button>
             </div>
             <div className="grid-item">
-                <h1>GITHUB</h1>
+                <h1>LINKEDLN</h1>
                 <button>Here</button>
             </div>
             <div className="grid-item">
