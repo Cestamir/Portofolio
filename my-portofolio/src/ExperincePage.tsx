@@ -27,7 +27,7 @@ const ExperincePage = () => {
   }
 
   return (
-    <section>
+    <section className='page' id='experience'>
         <Headline text='My experience' size={64} />
         <div style={{display: selectedItem ? "none" : "grid"}} className='exp-grid'>
           {expItemsList.map((item) => (
@@ -38,14 +38,16 @@ const ExperincePage = () => {
           ))}
         </div>
         {selectedItem && (
-          <div className='exp-item-display'>
-            <button onClick={closeItemDisplay} className='close-btn'>
-              x
-            </button>
-            <h1>{selectedItem.name}</h1>
-            <p>{selectedItem.info}</p>
-            <h3>{selectedItem.skills}</h3>
-            <h4>{selectedItem.status}</h4>
+          <div className='exp-display'>
+            <div className='exp-item-display'>
+              <button onClick={closeItemDisplay} className='close-btn'>
+                x
+              </button>
+              <h1>{selectedItem.name}</h1>
+              <p className='exp-info-text'>{selectedItem.info}</p>
+              <h3>{selectedItem.skills}</h3>
+              <h4 style={selectedItem.status === "Completed" ? {color: "lightgreen"} : {color: "orange"}}>{selectedItem.status}</h4>
+            </div>
           </div>
         )}
     </section>

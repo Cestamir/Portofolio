@@ -1,3 +1,5 @@
+import Button from "./components/Button"
+
 
 
 const ContactPage = () => {
@@ -5,21 +7,22 @@ const ContactPage = () => {
     <section className="page" id="contact">
         <div id="contact-grid" className="grid-page-layout">
             <div className="grid-item">
-                <h1>GITHUB</h1>
-                <button>Here</button>
+                <h1 className="contact-headline">GITHUB</h1>
+                <Button text="Connect"/>
             </div>
             <div className="grid-item">
-                <h1>EMAIL</h1>
-                <button>Here</button>
+                <h1 className="contact-headline">EMAIL</h1>
+                <Button text="Connect"/>
             </div>
             <div className="grid-item">
-                <h1>LINKEDLN</h1>
-                <button>Here</button>
+                <h1 className="contact-headline">LINKEDLN</h1>
+                <Button text="Connect"/>
             </div>
             <div className="grid-item">
-                <h1>GITHUB</h1>
-                <button>Here</button>
+                <h1 className="contact-headline">GITHUB</h1>
+                <Button text="Connect"/>
             </div>
+            {/* consider clicking the grid-item to link to the adress */}
         </div>
     </section>
   )
