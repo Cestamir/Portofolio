@@ -1,5 +1,5 @@
 import './App.css'
-import Bonus from './Bonus'
+import Bonus from './Footer'
 import ContactPage from './ContactPage'
 import ExperincePage from './ExperincePage'
 import HomePage from './HomePage'
@@ -26,21 +26,22 @@ function App() {
         <ExperincePage/>
         <div className='stripes'></div>
         <Bonus/>
-        {/* NAVBAR, (work, contact, vision, experience), focus, hide when scrolling down appears when scrolling up, oval rectangle shape with glass border
+        {/* NAVBAR focus, hide when scrolling down appears when scrolling up
         
 
         HOMEPAGE, eye catching visual or background with my name and titul, when scrolling down or hitting the arrow down, immediatly switches to the first item from navbar section
 
-        WORK
+        WORK no work yet but try to show of all the skills you LEARNT CESTMIR on this page
 
-        CONTACT github,linkedn,email,X[dont forget to post your progress here and commit daily to github] + About yourself ? maybe diffrent section.
+        CONTACT make a LINKEDLN +  text About yourself
 
-        VISION, i will become a software developer possibly software enginer, interests - physics,astronomy,sound,lifestyle,biohacking,hacking etc.
+        VISION, i will become a software developer possibly software enginer, interests - physics,astronomy,sound,lifestyle,biohacking,hacking etc. add more visions
 
-        EXPERIENCE, technologies used, technologies working with, technologies mastered or really prollific, mention courses and books !!
+        EXPERIENCE, technologies used, technologies working with, technologies mastered or really prollific, mention courses and books !!, add logos to the exp items
 
         BONUS, make clickable elements interactive and add sounds and visual effects like blur or glitter, edit basic cursor, add buttons for sound on/off and performance 
-
+        
+        BONUS PAGE should be a small minigame
 
         */}
 

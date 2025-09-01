@@ -31,7 +31,7 @@ const ExperincePage = () => {
           {expItemsList.map((item) => (
             <div onClick={() => handleItemClick(item)} key={item.id} className='grid-exp-item'>
               {item.name}
-              {/* need to add simple logo pictures to the frame, when it will be hovered or clicked show more info (skills,info,status) */}
+              {/* need to add simple logo pictures to the frame, change the gradient color, make the display box more neat. */}
             </div>
           ))}
         </div>
