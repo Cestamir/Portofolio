@@ -49,11 +49,11 @@
     text-decoration: none;
     color: black;
       text-shadow: 
-    -1px -1px 0 white,
-     1px -1px 0 white,
-    -1px  1px 0 white,
-     1px  1px 0 white;
-     opacity: 80%;
+    -0.5px -0.5px 0 white,
+     0.5px -0.5px 0 white,
+    -0.5px  0.5px 0 white,
+     0.5px  0.5px 0 white;
+     opacity: 90%;
      transition: all 0.5s ease;    
 }
 
@@ -143,11 +143,16 @@
   grid-row: 1;
   text-align: center;
   color: red;
+        text-shadow: 
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px  0.5px 0 black,
+     0.5px  0.5px 0 black;
 }
 
 .big-item {
   grid-column: 1;
-  grid-row: 2 / 4; 
+  grid-row: 2 / 4;
 }
 
 .small-top {
@@ -182,7 +187,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .grid-exp-item:hover {
@@ -229,4 +234,30 @@
 .close-btn:hover {
     cursor: pointer;
     color: crimson;
+}
+
+.quote-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.quote-btn {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    margin: 30px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.quote-btn:hover {
+    opacity: 80%;
+    cursor: pointer;
 }

@@ -1,5 +1,5 @@
 
-export const navItemsList = [{name: "Contact",color: "blue"},{name: "Work",color: "red"},{name: "Vision",color: "grey"},{name:"Experience",color: "purple"}]
+export const navItemsList = [{name: "Home",color: "yellow"},{name: "Contact",color: "blue"},{name: "Work",color: "red"},{name: "Vision",color: "grey"},{name:"Experience",color: "purple"}]
 
 export const expItemsList = [
     {id: 1,name: "ItNetwork.cz",info: "1st official course i have completed in Czech Republic focused mainly on basic web development and Javascript itslef",skills: "HTML,CSS,Javasript,CSS frameworks",status: "Completed"},

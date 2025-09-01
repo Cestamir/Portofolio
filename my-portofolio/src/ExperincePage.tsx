@@ -21,9 +21,7 @@ const ExperincePage = () => {
   }
 
   const closeItemDisplay = () => {
-    console.log('Closing, selectedItem was:', selectedItem);
     setSelectedItem(null);
-    console.log('selectedItem set to null');
   }
 
   return (
