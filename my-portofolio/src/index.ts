@@ -2,16 +2,12 @@
 export const navItemsList = [{name: "Home",color: "yellow"},{name: "Contact",color: "blue"},{name: "Work",color: "red"},{name: "Vision",color: "grey"},{name:"Experience",color: "purple"}]
 
 export const expItemsList = [
-    {id: 1,name: "ItNetwork.cz",info: "1st official course i have completed in Czech Republic focused mainly on basic web development and Javascript itslef",skills: "HTML,CSS,Javasript,CSS frameworks",status: "Completed"},
-    {id: 2,name: "freeCodeCamp",info: "The best free course on frontend development in the world, my 2nd course where i came across diffrent style of learning new skills in tech field",skills: "Docker,SQL,Javascript frameworks",status: "In progress"},
-    {id: 3,name: "Audio",info: "I my current job i am able to listen to various podcast as JS syntax,JS jabber, Lex Friedman, The programming podcast, freeCodeCamp podcast, Frontend fire, The standup from Primeagen and many more..",skills: "Most useful resources in tech world and critical news about what is happening",status: "Still listening :D"},
-    {id: 4,name: "Books",info: "Tech books and self-development books",skills: "philosophy",status: "Completed"},
-    {id: 5,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work"},
-    {id: 6,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work"},
-    {id: 7,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work"},
-    {id: 8,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work"},
-    {id: 9,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work"},
-    {id: 10,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work"},
+    {id: 1,name: "ItNetwork.cz",info: "1st official course i have completed in Czech Republic focused mainly on basic web development and Javascript itslef",skills: "HTML,CSS,Javasript,CSS frameworks",status: "Completed",type: "course"},
+    {id: 2,name: "freeCodeCamp",info: "The best free course on frontend development in the world, my 2nd course where i came across diffrent style of learning new skills in tech field",skills: "Docker,SQL,Javascript frameworks",status: "In progress",type: "freeCodeCamp"},
+    {id: 3,name: "Audio",info: "I my current job i am able to listen to various podcast as JS syntax,JS jabber, Lex Friedman, The programming podcast, freeCodeCamp podcast, Frontend fire, The standup from Primeagen and many more..",skills: "Most useful resources in tech world and critical news about what is happening",status: "Still listening :D",type: "brain"},
+    {id: 4,name: "Books",info: "Tech books and self-development books",skills: "philosophy",status: "Completed",type: "book"},
+    {id: 5,name: "English",info: "I've been learning since 2006",skills: "language",status: "lifetime work",type: "language"},
+    {id:6, name: "Coding",info: "Javascript + Typescript",skills: "web apps",status: "Getting better day by day",type: "code"}
 ]
 
 export const projects = [
@@ -40,3 +36,26 @@ export const projects = [
     pic: "/tsuyoshi-kozu-pJ_yqFKXHds-unsplash.jpg"
   }
 ];
+
+export const footerList = [
+  { id: 1, name: "All rights reserved 2025" },
+  { id: 2, name: "Cestmir Pavlasek" },
+  { id: 3, name: "Github /Cestamir" },
+  { id: 4, name: "Web development" },
+  { id: 5, name: "Inventions" },
+  { id: 6, name: "item!" },
+  { id: 7, name: "Stars" },
+  { id: 8, name: "Blizzard" },
+  { id: 9, name: "Galaxy" },
+  { id: 10, name: "time" },
+    { id: 1, name: "All rights reserved 2025" },
+  { id: 2, name: "Cestmir Pavlasek" },
+  { id: 3, name: "Github /Cestamir" },
+  { id: 4, name: "Web development" },
+  { id: 5, name: "Inventions" },
+  { id: 6, name: "item!" },
+  { id: 7, name: "Stars" },
+  { id: 8, name: "Blizzard" },
+  { id: 9, name: "Galaxy" },
+  { id: 10, name: "time" }
+]

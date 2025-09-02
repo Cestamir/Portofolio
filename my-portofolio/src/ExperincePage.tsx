@@ -2,6 +2,14 @@
 import { useState } from 'react'
 import Headline from './components/Headline'
 import { expItemsList } from './index'
+import { SiTypescript } from "react-icons/si";
+import { FaBook } from "react-icons/fa";
+import { IoLanguage } from "react-icons/io5";
+import { FaCode } from "react-icons/fa";
+import { FaFreeCodeCamp } from "react-icons/fa";
+import { FaHatWizard } from "react-icons/fa";
+
+
 
 
 interface GridItem {
@@ -13,6 +21,24 @@ interface GridItem {
 }
 
 const ExperincePage = () => {
+
+  const setIconForExperience =(iconType : string) => {
+    switch(iconType){
+        case "brain":
+            return <FaHatWizard size={30}/>;
+        case "code":
+            return <SiTypescript size={30}/>;
+        case "book":
+            return <FaBook size={30}/>;
+        case "language":
+            return <IoLanguage size={30}/>;
+        case "course":
+            return <FaCode size={30}/>;
+        case "freeCodeCamp":
+            return <FaFreeCodeCamp size={30}/>;
+        default: break;
+    }
+}
 
   const [selectedItem,setSelectedItem] = useState<GridItem | null>(null);
 
@@ -30,8 +56,9 @@ const ExperincePage = () => {
         <div style={{display: selectedItem ? "none" : "grid"}} className='exp-grid'>
           {expItemsList.map((item) => (
             <div onClick={() => handleItemClick(item)} key={item.id} className='grid-exp-item'>
-              {item.name}
-              {/* need to add simple logo pictures to the frame, change the gradient color, make the display box more neat. */}
+              {setIconForExperience(item.type)}
+              {/*make the display box of the detail more neat. */}
+              <span>{item.name}</span>
             </div>
           ))}
         </div>
