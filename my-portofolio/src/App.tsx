@@ -1,11 +1,12 @@
 import './App.css'
-import Bonus from './Footer'
-import ContactPage from './ContactPage'
-import ExperincePage from './ExperincePage'
-import HomePage from './HomePage'
+import Footer from './Footer'
+import ContactPage from './pages/ContactPage'
+import ExperincePage from './pages/ExperincePage'
+import HomePage from './pages/HomePage'
 import Navbar from './Navbar'
-import VisionPage from './VisionPage'
-import WorkPage from './WorkPage'
+import VisionPage from './pages/VisionPage'
+import WorkPage from './pages/WorkPage'
+import EmailPage from './pages/EmailPage'
 
 
 
@@ -25,7 +26,9 @@ function App() {
         <div className='stripes'></div>
         <ExperincePage/>
         <div className='stripes'></div>
-        <Bonus/>
+        <EmailPage />
+        <div className='stripes'></div>
+        <Footer/>
         {/* NAVBAR focus, hide when scrolling down appears when scrolling up
         
 

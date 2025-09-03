@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
-import Headline from './components/Headline'
-import { expItemsList } from './index'
+import Headline from '../components/Headline'
+import { expItemsList } from '../index'
 import { SiTypescript } from "react-icons/si";
 import { FaBook } from "react-icons/fa";
 import { IoLanguage } from "react-icons/io5";

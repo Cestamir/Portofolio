@@ -1,19 +1,26 @@
 
 import { footerList } from "."
-// make a infinite slow loop of credits and footer information (luna dev css)
+// loop stutters when the animation ends needs a fix 
 
 const Footer = () => {
 
 
   return (
     <>
-        <footer className="slider">
-            <div className="footer-list">
-              {footerList.map((item) => (
-                <div className="slider-item" style={{animationDelay: `calc(10s / 10 *${item.id} -1)`}}>{item.name}</div>
-              ))}
-            </div>
-        </footer>
+    <footer className="slider">
+      <div className="footer-list">
+        {footerList.map((item) => (
+          <div key={`original-${item.id}`} className="slider-item">
+            {item.name}
+          </div>
+        ))}
+        {footerList.map((item) => (
+          <div key={`duplicate-${item.id}`} className="slider-item">
+            {item.name}
+          </div>
+        ))}
+      </div>
+    </footer>
     </>
   )
 }

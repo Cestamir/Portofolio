@@ -1,11 +1,12 @@
 import React from 'react'
 interface ButtonItem {
-    text: string
+    text: string,
+    url: string
 }
 
-const Button = ({text } : ButtonItem) => {
+const Button = ({text,url } : ButtonItem) => {
   return (
-    <button className='button-el'>{text}</button>
+    <button className='button-el'><a href={url} target='_blank'>{text}</a></button>
   )
 }
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Headline from "./components/Headline"
+import Headline from "../components/Headline"
 
 
 // need to make a  initial animation for the webpage to show of the  headline and my name, with text loading in timeout 2s 4s and etc.

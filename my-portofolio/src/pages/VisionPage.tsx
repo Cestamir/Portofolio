@@ -1,6 +1,6 @@
-import { projects } from "./index"
-import Card from "./components/Card"
-import Headline from "./components/Headline"
+import { projects } from "../index"
+import Card from "../components/Card"
+import Headline from "../components/Headline"
 
 
 const VisionPage = () => {
