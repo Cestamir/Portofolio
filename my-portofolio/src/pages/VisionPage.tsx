@@ -2,6 +2,7 @@ import { projects } from "../index"
 import Card from "../components/Card"
 import Headline from "../components/Headline"
 
+  // need to be responsive, text is overflowing into. the next page
 
 const VisionPage = () => {
   return (

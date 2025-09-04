@@ -1,6 +1,6 @@
 import Headline from "../components/Headline"
 
-
+    // need to be responsive
 
 const WorkPage = () => {
   return (

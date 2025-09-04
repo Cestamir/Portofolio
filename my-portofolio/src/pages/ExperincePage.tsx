@@ -10,7 +10,7 @@ import { FaFreeCodeCamp } from "react-icons/fa";
 import { FaHatWizard } from "react-icons/fa";
 
 
-
+// need to be responsive, in small view the rectangles are diffrent size
 
 interface GridItem {
   id: number,
@@ -57,7 +57,6 @@ const ExperincePage = () => {
           {expItemsList.map((item) => (
             <div onClick={() => handleItemClick(item)} key={item.id} className='grid-exp-item'>
               {setIconForExperience(item.type)}
-              {/*make the display box of the detail more neat. */}
               <span>{item.name}</span>
             </div>
           ))}

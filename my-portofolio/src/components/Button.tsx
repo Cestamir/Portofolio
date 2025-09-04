@@ -6,7 +6,7 @@ interface ButtonItem {
 
 const Button = ({text,url } : ButtonItem) => {
   return (
-    <button className='button-el'><a href={url} target='_blank'>{text}</a></button>
+    <button className='button-el'><a href={url} rel="noopener" target={url.includes("http") ? "_blank" : "_self"}>{text}</a></button>
   )
 }
 

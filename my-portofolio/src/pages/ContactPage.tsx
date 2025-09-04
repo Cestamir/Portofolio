@@ -1,6 +1,6 @@
 import Button from "../components/Button"
 
-
+// need to be responsive
 
 const ContactPage = () => {
   return (
@@ -15,14 +15,15 @@ const ContactPage = () => {
                 <Button url="#email" text="Connect"/>
             </div>
             <div className="grid-item">
-                <h1 className="contact-headline">LINKEDLN</h1>
-                <Button url="#" text="Connect"/>
+                <h1 className="contact-headline">LINKEDIN</h1>
+                <Button url="www.linkedin.com/in/cestmir-pavlasek-4bb741382
+
+" text="Connect"/>
             </div>
             <div className="grid-item">
                 <h1 className="contact-headline">X</h1>
-                <Button url="#" text="Connect"/>
+                <Button url="https://x.com/Cestmirdev" text="Connect"/>
             </div>
-            {/* consider clicking the grid-item to link to the adress */}
         </div>
     </section>
   )

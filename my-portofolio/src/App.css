@@ -235,6 +235,16 @@
     color: black;
     border-radius: 20px;
     text-align: center;
+    animation: fade ease 0.5s;
+    border: 1.5px solid black;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 10%;
+    } 100% {
+        opacity: 100%;
+    }
 }
 
 .exp-display {
