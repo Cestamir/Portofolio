@@ -36,6 +36,14 @@ const EmailPage : React.FC = () => {
             ...prev,
             [name]: value,
         }))
+
+        if(error[name as keyof ErrorForm]){
+            setError((prev) => ({
+                ...prev,
+                [name]: undefined
+            }))
+        }
+        setSubmitStatus(null)
     }
 
     const validateEmail = (email : string) => {
@@ -107,6 +115,7 @@ const EmailPage : React.FC = () => {
     }
 
     // currently working as expected with status 200 ok, need more styling 
+    // need to be responsive
 
     const subjectOptions = [
     {value:"",name: "Select an option.."},
@@ -118,16 +127,16 @@ const EmailPage : React.FC = () => {
   return (
     <section className='page' id='email'>
         <Headline text='Email Form' size={32}/>
-        <form ref={form}>
-            <div className='email-form'>
-                <label >Email:</label>
-                <input name='email' placeholder='Emailadress@example.com' required id='email-input' type='email' value={emailData.email} onChange={handleChange}/>
-                <p>*required</p>
+        <form ref={form} className='form'>
+            <div className='form-element'>
+                <label className='input-label' htmlFor='email-input'>Email:</label>
+                <input className='email-form-input' name='email' placeholder='Emailadress@example.com' required id='email-input' type='email' value={emailData.email} onChange={handleChange}/>
+                <p className='required'>*required</p>
                 {error.email && <p style={{color: "red"}}>{error.email}</p>}
             </div>
-            <div className='select-form'>
-                <label>Subject:</label>
-                <select name='subject' value={emailData.subject} id='select-input' onChange={handleChange}>
+            <div className='form-element'>
+                <label className='input-label' htmlFor='select-input'>Subject:</label>
+                <select className='email-form-input' name='subject' value={emailData.subject} id='select-input' onChange={handleChange}>
                     {subjectOptions.map((item) => (
                         <option key={item.name} value={item.value}>
                             {item.name}
@@ -135,16 +144,16 @@ const EmailPage : React.FC = () => {
                     ))}
                 </select>
             </div>
-            <div className='message-form'>
-                <label>Message:</label>
-                <textarea name='message' onChange={handleChange} value={emailData.message} placeholder='Enter your message..' required rows={6} id='text-input'/>
-                <p>*required</p>
+            <div className='form-element'>
+                <label className='input-label' htmlFor='text-input'>Message:</label>
+                <textarea className='email-form-input' name='message' onChange={handleChange} value={emailData.message} placeholder='Enter your message..' required rows={6} id='text-input'/>
+                <p className='required'>*required</p>
                 {error.message && <p style={{color: "red"}}>{error.message}</p>}
             </div>
-            <button type='submit' disabled={isSubmitting} onClick={handleSubmit}>{isSubmitting ? "Sending.." : "Submit"}</button>
+            <button className='submit-btn' type='submit' disabled={isSubmitting} onClick={handleSubmit}>{isSubmitting ? "Sending.." : "Submit"}</button>
 
-            {submitStatus === "error" && <p>Something went wrong.</p>}
-            {submitStatus === "success" &&  <p>Message sent successfully !</p>} 
+            {submitStatus === "error" && <p style={{color: "red"}} className='status-message'>Something went wrong.</p>}
+            {submitStatus === "success" &&  <p style={{color: "green"}} className='status-message'>Message sent successfully !</p>} 
         </form>
     </section>
   )

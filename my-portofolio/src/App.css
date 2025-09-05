@@ -18,12 +18,37 @@
     color: black;
     text-align: center;
     font-weight: 900;
-    padding: 5px;
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 32px;
+                /* not working */
+        background-color: grey;
+    }
+    .navbar {
+        width: 300px;
+        /* not working */
+    }
+    .work-text{
+        font-size: 10px;
+                /* not working */
+        overflow-y: scroll;
+    }
+    .grid-layout{
+        display: flex;
+        flex-direction: column;
+                /* not working */
+    }
 }
 
 .work-text{
     text-align: center;
     font-size: 20px;
+    height: 100%;
+    text-align: left;
+    padding: 10px;
 }
 
 .navbar {
@@ -330,4 +355,90 @@
   100% {
     transform: translateX(calc(var(--slider-width) * var(--slider-quantity) * -1));
   }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+}
+
+.form-element {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#text-input{
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: lightgray;
+    color: black;
+    width: 80%;
+    min-height: 50px;
+    min-width: 200px;
+}
+
+#select-input{
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+#email-input{
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.input-label{
+    font-size: 24px;
+}
+
+.email-form-input{
+    min-width: 250px;
+    min-height: 40px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.email-form-input:hover{
+    border: 2px solid grey;
+    background-color: black;
+    cursor: pointer;
+    /* not working ? */
+}
+
+.submit-btn{
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Bruno Ace";
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
+}
+
+.required {
+    opacity: 70%;
+}
+
+.status-message{
+    margin: 0 auto;
+    font-size: 20px;
 }
