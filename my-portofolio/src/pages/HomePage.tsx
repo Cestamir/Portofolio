@@ -63,7 +63,7 @@ const HomePage = () => {
 
   return (
     <section className="page" id='home'>
-        <Headline text={'Cestmir Pavlasek'} size={64}/>
+        <Headline text={'Cestmir Pavlasek'}/>
         <button className="quote-btn" onClick={handleClick} disabled={loading}>{loading ? "Loading.." : "Get a daily quote."}</button>
         <div className="quote-box">
           {loading && (

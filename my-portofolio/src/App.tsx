@@ -17,17 +17,11 @@ function App() {
       <main>
         <Navbar/>
         <HomePage/>
-        <div className='stripes'></div>
         <WorkPage/>
-        <div className='stripes'></div>
         <ContactPage/>
-        <div className='stripes'></div>
         <VisionPage/>
-        <div className='stripes'></div>
         <ExperincePage/>
-        <div className='stripes'></div>
         <EmailPage />
-        <div className='stripes'></div>
         <Footer/>
         {/* NAVBAR focus, hide when scrolling down appears when scrolling up
         

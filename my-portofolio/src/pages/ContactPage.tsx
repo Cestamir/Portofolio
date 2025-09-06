@@ -1,10 +1,12 @@
 import Button from "../components/Button"
+import Headline from "../components/Headline"
 
 // need to be responsive
 
 const ContactPage = () => {
   return (
     <section className="page" id="contact">
+        <Headline text="Contact me!"/>
         <div id="contact-grid" className="grid-page-layout">
             <div className="grid-item">
                 <h1 className="contact-headline">GITHUB</h1>

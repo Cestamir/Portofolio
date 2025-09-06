@@ -52,7 +52,7 @@ const ExperincePage = () => {
 
   return (
     <section className='page' id='experience'>
-        <Headline text='My experience' size={64} />
+        <Headline text='My experience' />
         <div style={{display: selectedItem ? "none" : "grid"}} className='exp-grid'>
           {expItemsList.map((item) => (
             <div onClick={() => handleItemClick(item)} key={item.id} className='grid-exp-item'>

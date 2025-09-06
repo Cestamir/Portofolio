@@ -2,12 +2,11 @@ import React from 'react'
 
 interface HeadlineProps {
     text: string,
-    size: number
 }
 
-const Headline = ({text,size} : HeadlineProps) => {
+const Headline = ({text} : HeadlineProps) => {
   return (
-    <h1 className='headline' style={{fontSize: size}}>{text}</h1>
+    <div className='headline' ><h1>{text}</h1></div>
   )
 }
 

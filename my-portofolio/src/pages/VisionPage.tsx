@@ -7,7 +7,7 @@ import Headline from "../components/Headline"
 const VisionPage = () => {
   return (
     <section className="page" id="vision">
-        <Headline text="My vision" size={64}/>
+        <Headline text="My vision" />
         <div id="vision-grid" className="grid-page-layout">
             {projects.map((item) => (
                 <Card key={item.name} headline={item.name} text={item.text} status={item.status} photoURL={item.pic}/>

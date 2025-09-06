@@ -126,7 +126,7 @@ const EmailPage : React.FC = () => {
 
   return (
     <section className='page' id='email'>
-        <Headline text='Email Form' size={32}/>
+        <Headline text='Email Form'/>
         <form ref={form} className='form'>
             <div className='form-element'>
                 <label className='input-label' htmlFor='email-input'>Email:</label>
