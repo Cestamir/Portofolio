@@ -114,9 +114,6 @@ const EmailPage : React.FC = () => {
 
     }
 
-    // currently working as expected with status 200 ok, need more styling 
-    // need to be responsive
-
     const subjectOptions = [
     {value:"",name: "Select an option.."},
     {value:'tip',name : "Tip or suggestion"},
@@ -124,6 +121,9 @@ const EmailPage : React.FC = () => {
     {value:'work',name: "Work offer"},
     ]
 
+
+
+    // add a name form
   return (
     <section className='page' id='email'>
         <Headline text='Email Form'/>
