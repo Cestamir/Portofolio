@@ -13,7 +13,7 @@ const WorkPage = () => {
         <li>food-recipe-bible,</li>
         <li>space-levelup-blog</li>
       </ul>
-      <p>About me, a solo specialist looking for a team and mentors to became a better programming thinker to scale my skills and help building the new generation software, currently working full-time job with very busy lifestyle, trying to invest any spare time learning new things.</p>
+      <p>About me, a solo specialist looking for a team and mentors to became a better programming thinker and problem solver to scale my skills and help building the new generation software, currently working full-time job with very busy lifestyle, trying to invest any spare time learning new things.</p>
       </div>
     </section>
   )
